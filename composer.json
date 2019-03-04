@@ -112,6 +112,10 @@
        "url": "https://github.com/RegionHalland/mfpconnectmedia.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-links-blurbs.git"
+    },
+    {
        "type": "package",
        "package": {
          "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -162,7 +166,8 @@
     "regionhalland/region-halland-acf-page-ingress": "1.0.0",
     "regionhalland/region-halland-acf-page-kulturevenemang": "1.1.1",
     "regionhalland/mfpconnect": "1.0.1",
-    "regionhalland/mfpconnectmedia": "1.0.1"
+    "regionhalland/mfpconnectmedia": "1.0.1",
+    "regionhalland/region-halland-acf-page-links-blurbs": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
