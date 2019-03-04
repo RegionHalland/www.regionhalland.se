@@ -33,14 +33,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/Modularity.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/mod-linkgroup.git"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-acf-add-theme-subpage.git"
     },
     {
@@ -151,8 +143,6 @@
     "wpackagist-plugin/google-sitemap-generator": "4.1.0",
     "wpackagist-plugin/wp-migrate-db": "1.0.10",
     "wpackagist-plugin/user-role-editor": "^4.35",
-    "helsingborg-stad/modularity": "2.3.54",
-    "regionhalland/mod-linkgroup": "dev-master#ce46ee2",
     "regionhalland/region-halland-acf-add-theme-subpage": "1.0.0",
     "regionhalland/region-halland-acf-cookie-notice": "1.0.0",
     "regionhalland/region-halland-breadcrumbs": "1.0.0",
@@ -164,7 +154,7 @@
     "regionhalland/region-halland-mixed-functions": "1.0.0",
     "regionhalland/region-halland-page-children": "1.0.1",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
-    "regionhalland/region-halland-nav-site": "1.0.0",
+    "regionhalland/region-halland-nav-site": "1.0.1",
     "regionhalland/rhkontaktkort": "dev-master",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.1.0",
     "regionhalland/region-halland-acf-page-kulturkatalog": "1.1.0",
