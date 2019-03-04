@@ -3,7 +3,11 @@
 @php($id = uniqid())
 
 @section('content')
-
+	<div>UTVALD BILD HÄR</div>
+	<div>SIDRUBRIK?</div>
+	<div>NYHETER</div>
+	<div>EVENEMANG</div>
+{{--
 <main id="main">
 	<div class="bg-blue-dark">
 		<div class="container mx-auto px-4 pt-16 pb-12">
@@ -100,6 +104,6 @@
 		</div>
 	</div>
 </main>
-
+--}}
 
 @endsection
