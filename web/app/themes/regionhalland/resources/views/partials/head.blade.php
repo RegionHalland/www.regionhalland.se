@@ -15,7 +15,6 @@
 	<meta name="msapplication-config" content="@asset('images/favicons/browserconfig.xml')" />
 	<meta name="theme-color" content="#ffffff" />
 
-	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/tailwind.min.css' type='text/css' media='all' />
   	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/development.css' type='text/css' media='all' />
 	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" />
     <link href="{!! env('WP_HOME') !!}/styleguide2.0.0/css/components.css" rel="stylesheet"/>
