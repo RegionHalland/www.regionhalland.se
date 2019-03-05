@@ -120,6 +120,10 @@
       "url": "https://github.com/RegionHalland/region-halland-use-taxonomy-category-on-page.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-links-blurbs.git"
+    },
+    {
        "type": "package",
        "package": {
          "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -162,7 +166,7 @@
     "regionhalland/region-halland-mixed-functions": "1.0.0",
     "regionhalland/region-halland-page-children": "1.0.1",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
-    "regionhalland/region-halland-nav-site": "1.0.0",
+    "regionhalland/region-halland-nav-site": "1.0.1",
     "regionhalland/rhkontaktkort": "dev-master",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.1.0",
     "regionhalland/region-halland-acf-page-kulturkatalog": "1.1.0",
@@ -172,7 +176,8 @@
     "regionhalland/region-halland-site-map-regionhalland": "1.0.1",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
-    "regionhalland/mfpconnectmedia": "1.0.1"
+    "regionhalland/mfpconnectmedia": "1.0.1",
+    "regionhalland/region-halland-acf-page-links-blurbs": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",

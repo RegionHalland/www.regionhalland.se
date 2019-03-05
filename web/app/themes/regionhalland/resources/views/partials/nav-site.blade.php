@@ -66,7 +66,7 @@
 	{{-- Top bar END --}}
 	
 	{{-- Mobile Menu Drawer --}}
-	@if($deviceType == "phone")
+	@if($deviceType == "computer")
 		<nav class="js-site-nav hidden md:hidden w-full pin-t pin-l bg-white z-40">
 			@include('partials.nav-mobile')
 		</nav>
@@ -76,22 +76,20 @@
 	{{-- Bottom bar --}}
 	@php($top_level_pages = get_region_halland_tree_first_level())	
 	@if(isset($top_level_pages) && !empty($top_level_pages))
-	<div class="hidden md:block container mx-auto px-4 overflow-auto scrolling-touch">
-		<ul class="list-reset flex flex-wrap -mx-4">
-			@foreach($top_level_pages as $top_level_page)
-				<li class="flex-no-shrink px-4">
-
-					@if($top_level_page->active === true)
-						<a class="no-underline hover:underline focus:underline text-black font-bold py-4 inline-block relative" href="{{ $top_level_page->url }}">{{ $top_level_page->post_title }}
-							 <div class="absolute pin-b pin-l w-full h-1 rounded-t bg-blue-dark"></div>
-						</a>
-					@else
-						<a class="no-underline hover:underline focus:underline text-black font-bold py-4 inline-block" href="{{ $top_level_page->url }}">{{ $top_level_page->post_title }}</a>
-					@endif
-				</li>
-			@endforeach
-		</ul>
-	</div>
+		<nav class="rh-navbar">
+			<ul class="rh-navbar-nav">
+				@foreach($top_level_pages as $top_level_page)
+					<li class="rh-nav-item">
+						@if($top_level_page->active === true)
+							<a class="rh-nav-link" href="{{ $top_level_page->url }}">{{ $top_level_page->post_title }}
+							</a>
+						@else
+							<a class="rh-nav-link" href="{{ $top_level_page->url }}">{{ $top_level_page->post_title }}</a>
+						@endif
+					</li>
+				@endforeach
+			</ul>
+		</nav>
 	@endif
 	
 	{{-- Bottom bar END --}}
