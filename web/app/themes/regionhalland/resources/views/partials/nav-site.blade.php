@@ -51,11 +51,11 @@
 					{{-- Search Field END --}}
 
 					{{-- Mobile Menu Button --}}
-					<button type="submit" class="js-site-nav--toggle bg-yellow flex rounded-full ml-2 items-center justify-center block md:hidden pin-r pin-b h-8 w-8 md:h-12 md:w-12">
+					{{--<button type="submit" class="js-site-nav--toggle bg-yellow flex rounded-full ml-2 items-center justify-center block md:hidden pin-r pin-b h-8 w-8 md:h-12 md:w-12">
 						<svg class="h-4 w-4 md:h-6 md:w-6" title="Meny">
 							<use xlink:href="#menu"/>
 						</svg>
-					</button>
+					</button>--}}
 					{{-- Mobile Menu Button END --}}
 
 				</div>
@@ -66,11 +66,13 @@
 	{{-- Top bar END --}}
 	
 	{{-- Mobile Menu Drawer --}}
-	@if($deviceType == "computer")
+	{{--
+    @if($deviceType == "computer")
 		<nav class="js-site-nav hidden md:hidden w-full pin-t pin-l bg-white z-40">
 			@include('partials.nav-mobile')
 		</nav>
 	@endif
+	--}}
 	{{-- Mobile Menu Drawer END --}}
 
 	{{-- Bottom bar --}}
