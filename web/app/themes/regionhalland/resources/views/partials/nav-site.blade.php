@@ -15,24 +15,22 @@
 				<div class="flex flex-wrap px-4">
 					
 					{{-- Utilities --}}
-					<div class="hidden md:flex flex-wrap items-center">
-
-						<a class="flex items-center text-black no-underline hover:underline focus:underline mr-6" id="" onclick="toggleBar();" href="#">
-							<span class="inline-flex h-8 w-8 rounded-full bg-green-light items-center justify-center mr-2">
-								<svg class="inline-flex h-4 w-4 align-middle">
-									<use xlink:href="#volume-2"/>
-								</svg>
-							</span>Talande Webb
-						</a>
-						<a class="flex items-center text-black no-underline hover:underline focus:underline mr-6" target="_blank" href="https://etjanster.intra.regionhalland.se/">
-							<span class="inline-flex h-8 w-8 rounded-full bg-green-light items-center justify-center mr-2">
-								<svg class="inline-flex h-4 w-4 align-middle">
-									<use xlink:href="#user"/>
-								</svg>
-							</span>E-tjänster
-						</a>
-
-					</div>
+                    <div class="rh-toplinks">
+                        <ul class="rh-toplinks-nav">
+                            <li class="rh-toplinks-nav-item">
+                                <i class="feather icon-alert-triangle rh-toplinks-nav-link-icon"></i>
+                                <a class="rh-toplinks-nav-link" href="#">Driftinformation</a>
+                            </li>
+                            <li class="rh-toplinks-nav-item">
+                                <i class="feather icon-headphones rh-toplinks-nav-link-icon"></i>
+                                <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
+                            </li>
+                            <li class="rh-toplinks-nav-item">
+                                <i class="feather icon-log-in rh-toplinks-nav-link-icon"></i>
+                                <a class="rh-toplinks-nav-link" href="#">E-tjänster</a>
+                            </li>
+                        </ul>
+                    </div>
 					{{-- Utilities END --}}
 
 
