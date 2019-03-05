@@ -35,17 +35,12 @@
 
 
 					{{-- Search Field --}}
-					<form action="{{ home_url() }}" role="search">
-						<div class="bg-grey-lighter rounded-full lg:rounded lg:w-64 overflow-hidden flex rounded relative">
-							<label for="main-search" class="visually-hidden">Sök: </label>
-							<input name="s" id="main-search" aria-label="Sök på webbplatsen" placeholder="Sök på webbplatsen" class="hidden lg:inline-block text-base bg-transparent h-12 pin-t px-4 pin-l w-full" type="search">
-							<button type="submit" aria-label="Sök" class="bg-yellow flex items-center justify-center block lg:absolute pin-r pin-b h-8 w-8 md:h-12 md:w-12">
-								<svg class="h-4 w-4 md:h-6 md:w-6" title="Sök">
-									<use xlink:href="#search"/>
-								</svg>
-							</button>
-						</div>
-					</form>
+                    <div class="rh-search-field">
+                        <input type="text" class="rh-search-term rh-search-term-larger" placeholder="Placeholder">
+                        <button type="submit" class="rh-search-button rh-search-button-larger">
+                            Sök
+                        </button>
+                    </div>
 					{{-- Search Field END --}}
 
 					{{-- Mobile Menu Button --}}
