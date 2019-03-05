@@ -3,6 +3,8 @@
 @php($id = uniqid())
 
 @section('content')
+
+    @include('partials.section-navigation')
 	<div>UTVALD BILD HÄR</div>
 	<div>SIDRUBRIK?</div>
 	<div>NYHETER</div>
