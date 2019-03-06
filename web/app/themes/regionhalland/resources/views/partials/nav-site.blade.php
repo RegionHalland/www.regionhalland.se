@@ -1,18 +1,18 @@
 @php($deviceType = get_region_halland_device_type())
 <nav class="" aria-label="Huvudmeny">
 	{{-- Top bar --}}
-	<div class="w-full border-b border-grey-lighter bg-white relative z-50">
-		<div class="container mx-auto py-3 px-4">
-			<div class="flex flex-wrap items-center justify-between -mx-4">
+	<div class="">
+		<div class="">
+			<div class="">
 
 				{{-- Logo Container --}}
 				<a class="" title="Gå till startsida" aria-label="Gå till startsida" href="{{ esc_url( home_url( '/' ) ) }}">
-					<img class="block w-40" alt="Region Halland" src="{!! env('WP_HOME') !!}/include/img/navigation_logo.svg')" alt="">
+					<img class="" alt="Region Halland" src="{!! env('WP_HOME') !!}/include/img/navigation_logo.svg')" alt="">
 				</a>
 				{{-- Logo Container END--}}
 
 				{{-- Right Container --}}
-				<div class="flex flex-wrap px-4">
+				<div class="">
 					
 					{{-- Utilities --}}
                     <div class="rh-toplinks">
@@ -36,8 +36,8 @@
 
 					{{-- Search Field --}}
                     <div class="rh-search-field">
-                        <input type="text" class="rh-search-term rh-search-term-larger" placeholder="Placeholder">
-                        <button type="submit" class="rh-search-button rh-search-button-larger">
+                        <input type="text" class="rh-search-term rh-search-term" placeholder="Placeholder">
+                        <button type="submit" class="rh-search-button rh-search-button">
                             Sök
                         </button>
                     </div>
