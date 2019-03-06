@@ -502,7 +502,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 		})
 	};
 
-	return new Icons();
+	//return new Icons();   TODO: Remove the whole thing eventually. 
 	
 })();
 
