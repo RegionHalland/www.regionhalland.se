@@ -5,9 +5,8 @@
 @section('content')
 
     @include('partials.section-navigation')
-	<div>PUFFAR här - blurb</div>
-    <div>HEROBILD - utvald bild</div>
-    <div>1177 - fullbred puff</div>
+	<div>PUFFAR i tredjedelar här - blurb</div>
+<div>PUFFAR i halvbredd här - visit halland + 1177. Blurb?</div>
 
 {{--
 <main id="main">
