@@ -36,6 +36,20 @@
 				</div>
 			</div>
 
+			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
+			@if(isset($myBlurbs))
+				@foreach ($myBlurbs as $blurbs)
+                    <div class="demo">
+                    <div class="rh-block">
+                        <img src="{!! $blurbs['image'] !!}">
+                        <div class="rh-text">
+                            <h3><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}">{{ $blurbs['link_title'] }}</a></h3>
+                            <p>{{ $blurbs['post_content'] }}</p>
+                        </div>
+                    </div>
+                    </div>
+                @endforeach
+			@endif
 
 			<div class="bg-white pt-16 pb-8">
 				<div class="container mx-auto px-4">
