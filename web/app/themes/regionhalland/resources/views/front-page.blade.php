@@ -5,10 +5,10 @@
 @section('content')
 
     @include('partials.section-navigation')
-	<div>UTVALD BILD HÄR</div>
-	<div>SIDRUBRIK?</div>
-	<div>NYHETER</div>
-	<div>EVENEMANG</div>
+	<div>PUFFAR här - blurb</div>
+    <div>HEROBILD - utvald bild</div>
+    <div>1177 - fullbred puff</div>
+
 {{--
 <main id="main">
 	<div class="bg-blue-dark">
