@@ -41,7 +41,7 @@
 				@foreach ($myBlurbs as $blurbs)
                     <div class="demo">
                     <div class="rh-block">
-                        <img src="{!! $blurbs['image'] !!}">
+                        {!! $blurbs['image'] !!}
                         <div class="rh-text">
                             <h3><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}">{{ $blurbs['link_title'] }}</a></h3>
                             <p>{{ $blurbs['post_content'] }}</p>
