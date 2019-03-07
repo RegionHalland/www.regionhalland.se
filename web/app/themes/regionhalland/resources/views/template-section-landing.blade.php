@@ -21,24 +21,19 @@
 			</div>
 
 
-			<div class="bg-white pt-12 pb-8">
-				<div class="container mx-auto px-4">
-					<div class="w-full mx-auto">
-						<div class="flex flex-wrap -mx-4">
-							<div class="w-full lg:w-8/12 px-4">
-								@include('partials.section-navigation')
-							</div>
-							<div class="w-full lg:w-4/12 px-4 mt-12 lg:mt-0">
-								@include('partials.top-links')
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="">
+                @include('partials.section-navigation')
+            </div>
+            <div class="">
+                @include('partials.top-links')
+            </div>
+
 
 			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 			@if(isset($myBlurbs))
+                <ul class="flex flex-wrap pb3">
 				@foreach ($myBlurbs as $blurbs)
+                    <li class="col-12 md-col-6 lg-col-4 mx3">
                     <div class="demo">
                     <div class="rh-block">
                         {!! $blurbs['image'] !!}
@@ -48,14 +43,16 @@
                         </div>
                     </div>
                     </div>
+                    </li>
                 @endforeach
+                </ul>
 			@endif
 
             @if(function_exists('get_region_halland_page_news_taxonomi_category'))
                 @php($newsitems = get_region_halland_page_news_taxonomi_category())
-                <ul>
+                <ul class="flex flex-wrap pb3">
                     @foreach($newsitems as $newsitem)
-                        <li class="rh-article">
+                        <li class="rh-article col-12 md-col-6 lg-col-4 mx3">
                             <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
                             <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
                             <p class="rh-article-description">
@@ -65,6 +62,7 @@
                     @endforeach
                 </ul>
             @endif
+
 		</main>
 
 	@endwhile

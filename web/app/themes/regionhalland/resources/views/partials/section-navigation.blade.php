@@ -1,7 +1,7 @@
-<ul class="" aria-labelledby="Länklista">
+<ul class="flex flex-wrap" aria-labelledby="Länklista">
 	@php($page_children = get_region_halland_page_children())
 	@foreach($page_children as $index => $page)
-		<li class="rh-navigation-card">
+		<li class="rh-navigation-card col-12 md-col-6 lg-col-4 mx3">
 			<div class="rh-navigation-card-title">
 				<a href="{{ $page->url }}" class="rh-navigation-card-title-link">
 					{{ $page->post_title }}
