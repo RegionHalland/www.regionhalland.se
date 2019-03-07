@@ -51,29 +51,20 @@
                 @endforeach
 			@endif
 
-			<div class="bg-white pt-16 pb-8">
-				<div class="container mx-auto px-4">
-					<div class="w-full mx-auto">
-						@if(function_exists('get_region_halland_vg_news_categories'))
-							@php($news = get_region_halland_vg_news_categories())
-							@if($news)
-								<header class="relative pb-4 block mb-8">
-									<span class="border-b-2 border-blue-dark text-2xl font-bold text-black pb-2 z-20 relative leading-none">Nyheter</span>
-									<hr class="absolute pin-b pin-l w-full h-0 border-b-2 mb-1 border-blue-light z-10">
-								</header>
-							@endif
-						@endif
-						<div class="flex flex-wrap -mx-4">
-							<div class="w-full w-full lg:w-6/12 px-4 mb-8">
-								@include('partials.news-list-category')
-							</div>
-							<div class="w-full lg:w-6/12 px-4 mb-8">
-								@include('partials.blurb-list')
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            @if(function_exists('get_region_halland_page_news_taxonomi_category'))
+                @php($newsitems = get_region_halland_page_news_taxonomi_category())
+                <ul>
+                    @foreach($newsitems as $newsitem)
+                        <li class="rh-article">
+                            <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
+                            <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
+                            <p class="rh-article-description">
+                                {{ $newsitem['content'] }}
+                            </p>
+                        </li>
+                    @endforeach
+                </ul>
+            @endif
 		</main>
 
 	@endwhile
