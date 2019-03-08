@@ -9,9 +9,9 @@
 	@while (have_posts()) @php the_post() @endphp
 
 		<main id="main">
-            <div>
-                <h1 class="mb-4 text-white">{!! get_the_title() !!}</h1>
-                {{ get_region_halland_acf_page_ingress() }}
+            <div class="mx4 pt3 pb4">
+                <h1 class="mx3 pb2">{!! get_the_title() !!}</h1>
+                <div class="mx3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
             </div>
 
 
@@ -25,9 +25,9 @@
 
 			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 			@if(isset($myBlurbs))
-                <ul class="flex flex-wrap pb3 mx4" aria-label="Puffar">
+                <ul class="flex flex-wrap pt4 pb3 mx4" aria-label="Puffar" style="border-top: 3px solid green">
 				@foreach ($myBlurbs as $blurbs)
-                    <li class="col-12 sm-col-6 md-col-4 lg-col-4 px2">
+                    <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
                     <div class="demo">
                     <div class="rh-block">
                         {!! $blurbs['image'] !!}
