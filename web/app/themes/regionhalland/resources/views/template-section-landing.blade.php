@@ -19,6 +19,9 @@
 					</div>
 				</div>
 			</div>
+            <div>
+                {{ get_region_halland_acf_page_ingress() }}
+            </div>
 
 
             <div class="">
