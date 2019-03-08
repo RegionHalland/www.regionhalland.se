@@ -69,7 +69,8 @@
 	{{-- Mobile Menu Drawer END --}}
 
 	{{-- Bottom bar --}}
-	@php($top_level_pages = get_region_halland_tree_first_level())	
+	{{--
+	@php($top_level_pages = get_region_halland_tree_first_level())
 	@if(isset($top_level_pages) && !empty($top_level_pages))
 		<nav class="rh-navbar">
 			<ul class="rh-navbar-nav">
@@ -86,6 +87,6 @@
 			</ul>
 		</nav>
 	@endif
-	
+	--}}
 	{{-- Bottom bar END --}}
 </nav>
