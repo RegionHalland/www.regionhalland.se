@@ -50,7 +50,7 @@
                             <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
                             <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
                             <p class="rh-article-description">
-                                {{ $newsitem['content'] }}
+                                {{ wp_trim_words($newsitem['content'], 20, '...') }}
                             </p>
                         </li>
                     @endforeach
