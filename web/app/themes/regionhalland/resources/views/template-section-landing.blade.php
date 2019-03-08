@@ -9,17 +9,8 @@
 	@while (have_posts()) @php the_post() @endphp
 
 		<main id="main">
-			<div class="pt-16 pb-8 relative bg-blue-dark">
-				<div class="container mx-auto px-4 relative">
-					<div class="w-full mx-auto">
-						<h1 class="mb-4 text-white">{!! get_the_title() !!}</h1>
-						<div class="text-lg leading-tight md:text-xl mb-12 text-white white-link lg:w-5/12">
-							@php the_content() @endphp
-						</div>
-					</div>
-				</div>
-			</div>
             <div>
+                <h1 class="mb-4 text-white">{!! get_the_title() !!}</h1>
                 {{ get_region_halland_acf_page_ingress() }}
             </div>
 
