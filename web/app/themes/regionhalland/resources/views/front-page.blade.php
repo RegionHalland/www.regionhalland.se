@@ -4,26 +4,28 @@
 
 @section('content')
 
-    <ul class="" aria-labelledby="Länklista">
+    <nav aria-label="Undersidor">
+        <ul class="flex flex-wrap pt3 mx4" aria-label="Undersidor" style="background-color: #F4F4F4">
         @php($first_level_pages = get_region_halland_tree_first_level())
-        @foreach($first_level_pages as $index => $page)
-            <li class="rh-navigation-card">
-                <div class="rh-navigation-card-title">
-                    <a href="{{ $page->url }}" class="rh-navigation-card-title-link">
-                        {{ $page->post_title }}
-                    </a>
-                    <span class="rh-navigation-card-title-icon"></span>
-                </div>
-                <p class="rh-navigation-card-description">
-                    @if(has_excerpt($page->ID))
-                        {{ $page->acf_excerpt }}
-                    @else
-                        {{ html_entity_decode(wp_trim_words(region_halland_remove_shortcode($page->post_content), 10, '...'))  }}
-                    @endif
-                </p>
-            </li>
-        @endforeach
-    </ul>
+            @foreach($first_level_pages as $index => $page)
+                <li class="rh-navigation-card">
+                    <div class="rh-navigation-card-title">
+                        <a href="{{ $page->url }}" class="rh-navigation-card-title-link">
+                            {{ $page->post_title }}
+                        </a>
+                        <span class="rh-navigation-card-title-icon"></span>
+                    </div>
+                    <p class="rh-navigation-card-description">
+                        @if(has_excerpt($page->ID))
+                            {{ $page->acf_excerpt }}
+                        @else
+                            {{ html_entity_decode(wp_trim_words(region_halland_remove_shortcode($page->post_content), 10, '...'))  }}
+                        @endif
+                    </p>
+                </li>
+            @endforeach
+        </ul>
+    </nav>
 
 	<div>PUFFAR i tredjedelar här - blurb</div>
 <div>PUFFAR i halvbredd här - visit halland + 1177. Blurb?</div>
