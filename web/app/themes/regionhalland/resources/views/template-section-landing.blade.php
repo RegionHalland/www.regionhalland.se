@@ -9,23 +9,22 @@
 	@while (have_posts()) @php the_post() @endphp
 
 		<main id="main">
-            <div class="mx4 pt3 pb4">
-                <h1 class="mx3 pb2">{!! get_the_title() !!}</h1>
-                <div class="mx3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
+            <div class="pb2" style="background-color: #F4F4F4">
+                <div class="mx4 pt3 pb4">
+                    <h1 class="mx3 pb2">{!! get_the_title() !!}</h1>
+                    <div class="mx3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
+                </div>
+                <div class="">
+                    @include('partials.section-navigation')
+                </div>
+                <div class="">
+                    @include('partials.top-links')
+                </div>
             </div>
-
-
-            <div class="">
-                @include('partials.section-navigation')
-            </div>
-            <div class="">
-                @include('partials.top-links')
-            </div>
-
 
 			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 			@if(isset($myBlurbs))
-                <ul class="flex flex-wrap pt4 pb3 mx4" aria-label="Puffar" style="border-top: 3px solid green">
+                <ul class="flex flex-wrap pt4 pb3 mx4" aria-label="Puffar">
 				@foreach ($myBlurbs as $blurbs)
                     <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
                     <div class="demo">
