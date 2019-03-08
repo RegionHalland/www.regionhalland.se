@@ -25,9 +25,9 @@
 
 			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 			@if(isset($myBlurbs))
-                <ul class="flex flex-wrap pb3" aria-label="Puffar">
+                <ul class="flex flex-wrap pb3 mx4" aria-label="Puffar">
 				@foreach ($myBlurbs as $blurbs)
-                    <li class="col-12 md-col-6 lg-col-4 mx3">
+                    <li class="col-12 sm-col-6 md-col-4 lg-col-4 px2">
                     <div class="demo">
                     <div class="rh-block">
                         {!! $blurbs['image'] !!}
@@ -44,13 +44,13 @@
 
             @if(function_exists('get_region_halland_page_news_taxonomi_category'))
                 @php($newsitems = get_region_halland_page_news_taxonomi_category())
-                <ul class="flex flex-wrap pb3" aria-label="Nyheter">
+                <ul class="flex flex-wrap pb3 mx4" aria-label="Nyheter">
                     @foreach($newsitems as $newsitem)
-                        <li class="rh-article col-12 md-col-6 lg-col-4 mx3">
+                        <li class="rh-article col-12 sm-col-6 md-col-4 lg-col-4 px2">
                             <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
                             <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
                             <p class="rh-article-description">
-                                {{ wp_trim_words($newsitem['content'], 20, '...') }}
+                                {{ wp_trim_words(region_halland_remove_shortcode($newsitem['content']), 20, '...') }}
                             </p>
                         </li>
                     @endforeach
