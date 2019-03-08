@@ -2,7 +2,7 @@
     <ul class="flex flex-wrap pt3 mx4" aria-label="Undersidor" style="background-color: #F4F4F4">
         @php($page_children = get_region_halland_page_children())
         @foreach($page_children as $index => $page)
-            <li class="rh-navigation-card col-12 md-col-4 lg-col-4 mx3">
+            <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-4 px2">
                 <div class="rh-navigation-card-title">
                     <a href="{{ $page->url }}" class="rh-navigation-card-title-link">
                         {{ $page->post_title }}
