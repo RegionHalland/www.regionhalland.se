@@ -30,7 +30,7 @@
                     <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
                     <div class="demo">
                     <div class="rh-block">
-                        {!! $blurbs['image'] !!}
+                        <img src="{!! $blurbs['image_url'] !!}">
                         <div class="rh-text">
                             <h3><a href="{{ $blurbs['link_url'] }}" target="{{ $blurbs['link_target'] }}">{{ $blurbs['link_title'] }}</a></h3>
                             <p>{{ $blurbs['post_content'] }}</p>
