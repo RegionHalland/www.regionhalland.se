@@ -25,7 +25,7 @@
 
 			@php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 			@if(isset($myBlurbs))
-                <ul class="flex flex-wrap pb3">
+                <ul class="flex flex-wrap pb3" aria-label="Puffar">
 				@foreach ($myBlurbs as $blurbs)
                     <li class="col-12 md-col-6 lg-col-4 mx3">
                     <div class="demo">
@@ -44,7 +44,7 @@
 
             @if(function_exists('get_region_halland_page_news_taxonomi_category'))
                 @php($newsitems = get_region_halland_page_news_taxonomi_category())
-                <ul class="flex flex-wrap pb3">
+                <ul class="flex flex-wrap pb3" aria-label="Nyheter">
                     @foreach($newsitems as $newsitem)
                         <li class="rh-article col-12 md-col-6 lg-col-4 mx3">
                             <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
