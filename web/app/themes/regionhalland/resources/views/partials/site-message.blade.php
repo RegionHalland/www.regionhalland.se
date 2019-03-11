@@ -4,7 +4,6 @@
     <span class="rh-message-icon"></span>
     <div class="rh-message-text">
       <h5 class="rh-message-text-title">{!! $myMessage['rubrik'] !!}</h5>
-      <p>Datum - varifrån hämtas det?</p>
       <p>
         {!! $myMessage['meddelande'] !!}
       </p>
