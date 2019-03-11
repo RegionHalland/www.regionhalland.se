@@ -27,6 +27,5 @@ web/wp/*
 .env
 .env.*
 
-.htaccess
 .idea
 .idea/*
