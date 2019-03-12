@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    	
-<?php 
-
+<?php
 	$args = array(
 		'posts_per_page'   => -1,
 		'offset'           => 0,
@@ -23,7 +21,6 @@
 		'fields'           => ''
 	);
 	$myPages = get_posts($args);
-
 ?>	
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <?php
