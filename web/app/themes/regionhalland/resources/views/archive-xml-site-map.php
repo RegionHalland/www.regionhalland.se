@@ -1,7 +1,7 @@
-<?php 
-    
-    echo '<?xml version="1.0" encoding="UTF-8" ?>';
+<?xml version="1.0" encoding="UTF-8" ?>
     	
+<?php 
+
 	$args = array(
 		'posts_per_page'   => -1,
 		'offset'           => 0,
