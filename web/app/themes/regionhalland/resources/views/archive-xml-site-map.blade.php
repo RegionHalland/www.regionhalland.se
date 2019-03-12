@@ -1,4 +1,4 @@
-@extends('xml.app')
+@extends('layouts.xml')
 @section('content')
 <?xml version="1.0" encoding="UTF-8" ?>
 <?php
