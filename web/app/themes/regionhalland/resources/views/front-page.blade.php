@@ -26,7 +26,8 @@
             @endforeach
         </ul>
     </nav>
-
+    {!! the_content() !!}
+    {{ get_region_halland_acf_page_ingress() }}
 	<div>PUFFAR i tredjedelar här - blurb</div>
 <div>PUFFAR i halvbredd här - visit halland + 1177. Blurb?</div>
 
