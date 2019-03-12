@@ -29,11 +29,9 @@
 <?php
 	foreach ($myPages as $page) {
 	 	$strPermaLink = get_permalink($page->ID);
-	 	$strPostType = $page->post_type;
 	?>
 	<url>
       <loc><?=$strPermaLink?></loc>
-      <posttype><?=$strPostType?></posttype>
    </url>
 <?php } ?>
 </urlset>
