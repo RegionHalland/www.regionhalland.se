@@ -46,11 +46,11 @@
                 @if($newsitems)
                     <div style="background-color: #F4F4F4;" class="mb3 pb3 pt3">
                         <div class="mx4 pt3 pb2">
-                            <h1 class="mx3 pb2">Nyheter</h1>
+                            <h1 class="pb2">Nyheter</h1>
                         </div>
                         <ul class="flex flex-wrap pb3 mx4 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 1ex; box-shadow: 1px 2px 6px grey;">
                             @foreach($newsitems as $newsitem)
-                                <li class="rh-article col-12 sm-col-6 md-col-4 lg-col-4 px2">
+                                <li class="rh-article col-12 sm-col-6 md-col-6 lg-col-6 px2">
                                     <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
                                     <p class="rh-article-published">Publicerad: {{ $newsitem['date'] }}</p>
                                     <p class="rh-article-description">
