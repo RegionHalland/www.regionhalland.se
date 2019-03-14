@@ -1,7 +1,7 @@
 <nav class="rh-header" aria-label="Sidhuvud">
     <div class="rh-header-logo">
         <div class="rh-logo-sitename">
-            <a href="/"><img class="rh-logo-sitename-logo" src="/styleguide2.1.0/images/components/rh-logo-sitename/navigation_logo.svg" alt="Länk till förstasidan"></a>
+            <a href="/"><img class="rh-logo-sitename-logo" src="/styleguide2.2.1/images/components/rh-logo-sitename/navigation_logo.svg" alt="Länk till förstasidan"></a>
         </div>
     </div>
     {{-- Utilities --}}
