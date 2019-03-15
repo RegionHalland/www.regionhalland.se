@@ -3,19 +3,18 @@
 @php($id = uniqid())
 
 @section('content')
-
-    <nav aria-label="Undersidor">
-        <ul class="flex flex-wrap pt3 mx4" aria-label="Undersidor" style="background-color: #F4F4F4">
+    <nav aria-label="Undersidor" style="background-color: #F4F4F4;">
+        <ul class="flex flex-wrap pt3 center" aria-label="Undersidor" style="max-width: 1440px;">
         @php($first_level_pages = get_region_halland_tree_first_level())
             @foreach($first_level_pages as $index => $page)
-                <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-4 px2">
+                <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-3 px2">
                     <div class="rh-navigation-card-title">
                         <a href="{{ $page->url }}" class="rh-navigation-card-title-link">
                             {{ $page->post_title }}
                         </a>
                         <span class="rh-navigation-card-title-icon"></span>
                     </div>
-                    <p class="rh-navigation-card-description">
+                    <p class="rh-navigation-card-description left-align">
                         @if(has_excerpt($page->ID))
                             {{ $page->acf_excerpt }}
                         @else
