@@ -33,6 +33,8 @@
                 @php($newsitems = get_region_halland_page_news_taxonomi_category())
                 @if($newsitems)
                     <div style="background-color: #F4F4F4;" class="mb3 pb3 pt3">
+                        <div class="center" style="max-width:1440px;">
+                            <div class="left-align">
                         <div class="mx4 pt3 pb2">
                             <h1 class="pb2">Nyheter</h1>
                         </div>
@@ -49,6 +51,8 @@
                         </ul>
                         <div class="col-12 center mt3">
                             <button class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button">Visa fler nyheter</button>
+                        </div>
+                        </div>
                         </div>
                     </div>
                 @endif
