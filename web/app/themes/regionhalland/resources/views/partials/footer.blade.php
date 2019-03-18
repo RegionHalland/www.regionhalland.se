@@ -121,5 +121,5 @@
 </div>
  --}}
 <script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/jquery.3.3.1.min.js?ver=3.3.1'></script>
-<script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/digitaliseringbyran.js'></script>
+{{--<script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/digitaliseringbyran.js'></script>--}}
 <script type='text/javascript' src='{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js'></script>
