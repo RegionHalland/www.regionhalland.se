@@ -1,7 +1,6 @@
 @if(!is_front_page())
-@php($breadcrumbs = get_region_halland_breadcrumbs())	
-@if(isset($breadcrumbs))
-
+    @php($breadcrumbs = get_region_halland_breadcrumbs())
+    @if(isset($breadcrumbs))
 		<div class="rh-breadcrumbs">
 			<ul class="rh-breadcrumb-group pl4 mx-auto" style="max-width:1440px;">
 				@foreach ($breadcrumbs as $breadcrumb)
@@ -16,6 +15,5 @@
 				@endforeach
 			</ul>
 		</div>
-
-@endif
+    @endif
 @endif
