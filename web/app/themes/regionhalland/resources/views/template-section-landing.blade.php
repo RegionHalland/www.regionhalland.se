@@ -38,7 +38,7 @@
                         <div class="mx4 pt3 pb2">
                             <h1 class="pb2">Nyheter</h1>
                         </div>
-                        <ul class="flex flex-wrap pb3 mx4 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 1ex; box-shadow: 1px 2px 6px grey;">
+                        <ul class="flex flex-wrap pb3 mx4 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
                             @foreach($newsitems as $newsitem)
                                 <li class="rh-article col-12 sm-col-6 md-col-6 lg-col-6 px2">
                                     <h5 class="rh-article-title"><a class="rh-article-title-link" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h5>
