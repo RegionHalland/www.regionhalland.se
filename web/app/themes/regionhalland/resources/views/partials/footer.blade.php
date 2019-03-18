@@ -1,6 +1,6 @@
 <div style="background-color: #C3DCC1">
     <div class="center flex flex-wrap pt3 pb4 px4" style="max-width: 1440px;">
-        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Kontakta oss</p>
             <p>
                 Region Halland<br>
@@ -23,7 +23,7 @@
             </p>
         </div>
 
-        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Nyheter och press</p>
             <p>(länk till sida)</p>
             <p class="h2 pt2">Följ oss</p>
@@ -41,7 +41,7 @@
             @endif
 
         </div>
-        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Om webbplatsen<p>
             <p>
                 Om webbplatsen<br>
