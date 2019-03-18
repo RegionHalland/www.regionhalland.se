@@ -32,7 +32,7 @@
             @if(function_exists('get_region_halland_page_news_taxonomi_category'))
                 @php($newsitems = get_region_halland_page_news_taxonomi_category())
                 @if($newsitems)
-                    <div style="background-color: #F4F4F4;" class="mb3 pb3 pt3">
+                    <div style="background-color: #F4F4F4;" class="pb3 pt3">
                         <div class="center" style="max-width:1440px;">
                             <div class="left-align">
                         <div class="mx4 pt3 pb2">
