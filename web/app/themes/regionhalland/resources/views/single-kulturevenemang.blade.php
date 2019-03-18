@@ -36,10 +36,7 @@
 								<span><strong>Fullbokat:</strong> {{ get_region_halland_acf_page_kulturevenemang_fullbokat() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Starttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_start_tid() }}</span>
-							</li>
-							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Sluttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_slut_tid() }}</span>
+								<span><strong>Ttid:</strong> {{ get_region_halland_acf_page_kulturevenemang_tid() }}</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
 								<span><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturevenemang_plats() }}</span>

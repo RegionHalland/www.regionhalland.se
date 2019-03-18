@@ -1,7 +1,7 @@
-@extends('layouts.xml')
-@section('content')
-<?xml version="1.0" encoding="UTF-8" ?>
-<?php
+<?php 
+    
+    echo '<?xml version="1.0" encoding="UTF-8" ?>';
+    	
 	$args = array(
 		'posts_per_page'   => -1,
 		'offset'           => 0,
@@ -23,14 +23,17 @@
 		'fields'           => ''
 	);
 	$myPages = get_posts($args);
+
 ?>	
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <?php
 	foreach ($myPages as $page) {
 	 	$strPermaLink = get_permalink($page->ID);
+	 	$strPostType = $page->post_type;
 	?>
 	<url>
       <loc><?=$strPermaLink?></loc>
+      <posttype><?=$strPostType?></posttype>
    </url>
 <?php } ?>
 </urlset>

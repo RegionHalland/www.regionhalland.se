@@ -24,7 +24,15 @@
 						</header>
 						<ol class="list-reset bg-yellow-light relative rounded border border-grey-lightest overflow-hidden">
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
-								<span><strong>Typ:</strong> {{ get_region_halland_acf_page_kulturkatalog_type_name() }}</span>
+								<span>
+									<strong>Typ:</strong>
+									@php($arrLabels = get_region_halland_acf_page_kulturkatalog_type_labels())	
+									@if(isset($arrLabels))
+										@foreach ($arrLabels as $label)
+											{{ $label['label'] }}, 
+										@endforeach
+									@endif
+								</span>
 							</li>
 							<li class="px-4 py-4 border-grey-lightest truncate overflow-hidden relative">
 								<span><strong>Publik:</strong> {{ get_region_halland_acf_page_kulturkatalog_publik() }}</span>
