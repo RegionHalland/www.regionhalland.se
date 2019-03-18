@@ -1,3 +1,68 @@
+<div style="background-color: #C3DCC1">
+    <div class="center flex flex-wrap pt3 pb4 px4" style="max-width: 1440px;">
+        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+            <p class="h2">Kontakta oss</p>
+            <p>
+                Region Halland<br>
+                Box 517<br>
+                301 80 Halmstad
+            </p>
+            <p>
+                <strong>Telefon:</strong> 035 - 13 48 00<br>
+                <strong>E-post:</strong> <a href="mailto:regionen@regionhalland.se">regionen@regionhalland.se</a>
+            </p>
+            <p class="h2 pt2">
+                Fler kontaktvägar (till intern sida)
+            </p>
+            <p class="h2 pt2">
+                Felanmälan och synpunkter
+            </p>
+            <p>
+                Visselblås<br>
+                ...
+            </p>
+        </div>
+
+        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+            <p class="h2">Nyheter och press</p>
+            <p>(länk till sida)</p>
+            <p class="h2 pt2">Följ oss</p>
+            <p>Region Halland i sociala medier</p>
+            <p class="h2 pt2">Ämnesområden</p>
+            @php($first_level_pages = get_region_halland_tree_first_level())
+            @if(isset($first_level_pages) && !empty($first_level_pages))
+                @foreach($first_level_pages as $first_level_page)
+                    @if($first_level_page->active === true)
+                        <a class="active" href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
+                    @else
+                        <a href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
+                    @endif
+                @endforeach
+            @endif
+
+        </div>
+        <div class="left-align col-12 sm-col-12 md-col-4 lg-col-4">
+            <p class="h2">Om webbplatsen<p>
+            <p>
+                Om webbplatsen<br>
+                Behandling av personuppgifter
+            </p>
+            <p class="h2 pt2">Demokrati och politik</p>
+            <p>
+                @if(function_exists('get_region_halland_page_children'))
+                    @php($myPages = get_region_halland_page_children(14))
+                    @if(isset($myPages))
+                        @foreach ($myPages as $myChilds)
+                            <a href="{{ $myChilds->url }}">{{ $myChilds->post_title }}</a><br>
+                        @endforeach
+                    @endif
+                @endif
+
+            </p>
+        </div>
+    </div>
+</div>
+{{--
 <div class="rh-footer">
 
 	<div class="rh-footer-section">
@@ -54,6 +119,7 @@
 	</div>
 
 </div>
+ --}}
 <script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/jquery.3.3.1.min.js?ver=3.3.1'></script>
 <script type='text/javascript' src='{!! env('WP_HOME') !!}/include/scripts/digitaliseringbyran.js'></script>
 <script type='text/javascript' src='{!! env('WP_HOME') !!}/styleguide2.2.1/js/components.js'></script>
