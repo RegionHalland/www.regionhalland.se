@@ -10,11 +10,7 @@
                     <span class="rh-navigation-card-title-icon"></span>
                 </div>
                 <p class="rh-navigation-card-description">
-                    @if(has_excerpt($page->ID))
-                        {{ $page->acf_excerpt }}
-                    @else
-                        {{ html_entity_decode(wp_trim_words(region_halland_remove_shortcode($page->post_content), 10, '...'))  }}
-                    @endif
+                    {{ get_region_halland_acf_page_navigation_text() }}
                 </p>
             </li>
         @endforeach
