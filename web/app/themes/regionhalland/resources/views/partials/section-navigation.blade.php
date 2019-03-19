@@ -10,7 +10,7 @@
                     <span class="rh-navigation-card-title-icon"></span>
                 </div>
                 <p class="rh-navigation-card-description">
-                    {{ get_region_halland_acf_page_navigation_text() }}
+                    {{ get_region_halland_acf_page_navigation_text($page->ID) }}
                 </p>
             </li>
         @endforeach
