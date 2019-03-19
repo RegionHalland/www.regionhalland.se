@@ -80,10 +80,6 @@
       "url": "https://github.com/RegionHalland/region-halland-nav-site.git"
     },
     {
-       "type": "vcs",
-       "url": "https://github.com/RegionHalland/rhkontaktkort.git"
-    },
-    {
       "type": "vcs",
       "url": "https://github.com/RegionHalland/region-halland-news-archive-taxonomi-category.git"
     },
@@ -105,7 +101,15 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-xml-site-map.git"
+      "url": "https://github.com/RegionHalland/region-halland-use-taxonomy-category-on-page.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-links-blurbs.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-a-b-c-page-links-repeater.git"
     },
     {
        "type": "vcs",
@@ -114,14 +118,6 @@
     {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnectmedia.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-use-taxonomy-category-on-page.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-acf-page-links-blurbs.git"
     },
     {
        "type": "package",
@@ -167,15 +163,14 @@
     "regionhalland/region-halland-page-children": "1.1.0",
     "regionhalland/region-halland-nav-sidebar": "1.0.1",
     "regionhalland/region-halland-nav-site": "1.0.1",
-    "regionhalland/rhkontaktkort": "dev-master",
     "regionhalland/region-halland-news-archive-taxonomi-category": "1.2.0",
-    "regionhalland/region-halland-acf-page-kulturkatalog": "1.1.0",
+    "regionhalland/region-halland-acf-page-kulturkatalog": "1.2.0",
     "regionhalland/region-halland-acf-options-page-site-message": "1.0.1",
-    "regionhalland/region-halland-acf-page-ingress": "1.1.0",
-    "regionhalland/region-halland-acf-page-kulturevenemang": "1.1.1",
-    "regionhalland/region-halland-xml-site-map": "1.0.0",
+    "regionhalland/region-halland-acf-page-ingress": "1.1.1",
+    "regionhalland/region-halland-acf-page-kulturevenemang": "1.2.0",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.3.0",
+    "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
