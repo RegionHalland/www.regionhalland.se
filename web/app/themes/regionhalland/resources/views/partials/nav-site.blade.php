@@ -32,6 +32,6 @@
     </div>
     <div class="rh-header-menu">
         <button class="rh-header-button rh-header-button--search"></button>
-        <button class="rh-header-button rh-header-button--menu"></button>
+        {{--<button class="rh-header-button rh-header-button--menu"></button>--}}
     </div>
 </nav>
