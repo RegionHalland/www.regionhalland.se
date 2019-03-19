@@ -1,4 +1,4 @@
-<div class="inline-block mt-8 pb-6 border-b w-full border-grey-light">
+{{--<div class="inline-block mt-8 pb-6 border-b w-full border-grey-light">
 	<header class="relative pb-4 block mb-6">
 		<span class="border-b-2 border-blue-dark text-xl font-bold text-black pb-2 z-20 relative leading-none">Om innehållet</span>
 		<hr class="absolute pin-b pin-l w-full h-0 border-b-2 mb-1 border-blue-light z-10">
@@ -25,9 +25,8 @@
 		</span>
 	</div>
 	@endif
-	<div class="block mb-2">
-		<span class="text-base">
-			Senast ändrad: <time itemprop="dateModified" datetime="{{ the_modified_date('Y-m-d') }}">{{ the_modified_date('Y-m-d') }}</time>
-		</span>
-	</div>
-</div>
+	--}}
+<p>
+	Senast ändrad: <time itemprop="dateModified" datetime="{{ the_modified_date('Y-m-d') }}">{{ the_modified_date('Y-m-d') }}</time>
+</p>
+{{--</div>--}}
