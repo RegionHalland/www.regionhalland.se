@@ -27,7 +27,7 @@
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
-		<main class="pl4 pb4 col col-12 sm-col-8 md-col-9 lg-col-9" id="main">
+		<main class="pl4 pt3 pb4 col col-12 sm-col-8 md-col-9 lg-col-9" id="main">
 			@while(have_posts()) @php(the_post())
 				
 				<h1>{{ the_title() }}</h1>
