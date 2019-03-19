@@ -1,5 +1,5 @@
 <div style="background-color: #C3DCC1">
-    <div class="center flex flex-wrap pt3 pb4 px4" style="max-width: 1440px;">
+    <div class="clearfix center flex flex-wrap pt3 pb4 px4" style="max-width: 1440px;">
         <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Kontakta oss</p>
             <p>
@@ -11,10 +11,10 @@
                 <strong>Telefon:</strong> 035 - 13 48 00<br>
                 <strong>E-post:</strong> <a href="mailto:regionen@regionhalland.se">regionen@regionhalland.se</a>
             </p>
-            <p class="h2 pt2">
+            <p class="h2 pt3">
                 Fler kontaktvägar (till intern sida)
             </p>
-            <p class="h2 pt2">
+            <p class="h2 pt3">
                 Felanmälan och synpunkter
             </p>
             <p>
@@ -26,9 +26,9 @@
         <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Nyheter och press</p>
             <p>(länk till sida)</p>
-            <p class="h2 pt2">Följ oss</p>
+            <p class="h2 pt3">Följ oss</p>
             <p>Region Halland i sociala medier</p>
-            <p class="h2 pt2">Ämnesområden</p>
+            <p class="h2 pt3">Ämnesområden</p>
             @php($first_level_pages = get_region_halland_tree_first_level())
             @if(isset($first_level_pages) && !empty($first_level_pages))
                 @foreach($first_level_pages as $first_level_page)
@@ -47,7 +47,7 @@
                 Om webbplatsen<br>
                 Behandling av personuppgifter
             </p>
-            <p class="h2 pt2">Demokrati och politik</p>
+            <p class="h2 pt3">Demokrati och politik</p>
             <p>
                 @if(function_exists('get_region_halland_page_children'))
                     @php($myPages = get_region_halland_page_children(14))
