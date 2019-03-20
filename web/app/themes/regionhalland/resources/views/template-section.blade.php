@@ -7,7 +7,7 @@
 @section('content')
 
 <main class="bg-white pt-16 pb-8" id="main">
-	<div class="container mx-auto px-4">
+	<div class="container mx-auto p">
 		<div class="w-full mx-auto">
 			<h1 class="mb-4">{!! get_the_title() !!}</h1>
 			@while(have_posts()) @php(the_post())

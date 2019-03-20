@@ -1,7 +1,7 @@
 @php($myBlurbs = get_region_halland_acf_main_post_page_links_blurbs())
 @if(isset($myBlurbs))
     <div class="center" style="max-width: 1440px;">
-    <ul class="flex flex-wrap pt4 pb3 mx4" aria-label="Puffar">
+    <ul class="flex flex-wrap pt4 pb3 mx3" aria-label="Puffar">
         @foreach ($myBlurbs as $blurbs)
             <li class="col-12 sm-col-6 md-col-4 lg-col-4 pr3">
                 <div class="demo">

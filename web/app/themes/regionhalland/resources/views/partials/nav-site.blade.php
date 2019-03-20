@@ -1,4 +1,4 @@
-<nav class="rh-header center px2" aria-label="Sidhuvud" style="max-width: 1440px;">
+<nav class="rh-header center px3" aria-label="Sidhuvud" style="max-width: 1440px;">
     <div class="rh-header-logo">
         <div class="rh-logo-sitename">
             <a href="/"><img class="rh-logo-sitename-logo" src="/styleguide2.2.1/images/components/rh-logo-sitename/navigation_logo.svg" alt="Länk till förstasidan"></a>
