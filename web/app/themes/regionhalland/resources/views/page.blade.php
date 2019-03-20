@@ -15,19 +15,13 @@
 					{{-- Sidebar Navigation --}}
 					@include('partials.nav-sidebar')
 					{{-- Sidebar Navigation END--}}
-
-					{{-- Left Sidebar END --}}
-					@if (is_active_sidebar('sidebar-left'))
-						@include('partials.sidebar-left')
-					@endif
-					{{-- Left Sidebar END --}}
 				</aside>
 			@endif
 		@endif
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
-		<main class="pl4 pt3 pb4 col col-12 sm-col-8 md-col-9 lg-col-9" id="main">
+		<main class="pl4 pt3 pb4 col col-12 sm-col-6 md-col-7 lg-col-7" id="main">
 			@while(have_posts()) @php(the_post())
 				
 				<h1>{{ the_title() }}</h1>
@@ -44,28 +38,16 @@
 				</article>
 				{{-- Content END --}}
 
-				{{-- Sidebar Bottom --}}
-				@if (is_active_sidebar('sidebar-article-bottom'))
-				<aside class="">
-					@include('partials.sidebar-article-bottom')
-				</aside>
-				@endif
-				{{-- Sidebar Bottom END --}}
-
 				{{-- Author --}}
 				@include('partials.author-info')
 				{{-- Author END --}}
 
 			@endwhile
 
-				{{-- HSA KONTAKTKORT --}}
-				@include('partials.rh-hsa')
-			
-
 		</main>
 		{{-- Main Content END --}}
 
-		<aside class="">
+		<aside class="pt4 col col-12 sm-col-2 md-col-2 lg-col-2">
 			{{-- Content Navigation --}}
 			@include('partials.content-nav')
 			{{-- Content Navigation END --}}
