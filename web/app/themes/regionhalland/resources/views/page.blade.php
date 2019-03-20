@@ -11,7 +11,7 @@
 		@if(function_exists('get_region_halland_nav_sidebar'))
 			@php($nav_sidebar = get_region_halland_nav_sidebar())
 			@if(isset($nav_sidebar) && !empty($nav_sidebar))
-				<aside class="pl4 pt3 pb4 col col-12 sm-col-4 md-col-3 lg-col-3">
+				<aside class="pl4 pt3 pb4 col col-12 sm-col-12 md-col-12 lg-col-3">
 					{{-- Sidebar Navigation --}}
 					@include('partials.nav-sidebar')
 					{{-- Sidebar Navigation END--}}
@@ -21,7 +21,7 @@
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
-		<main class="pl4 pt3 pb4 col col-12 sm-col-6 md-col-7 lg-col-7" id="main">
+		<main class="pl4 pt3 pb4 col col-12 sm-col-12 md-col-12 lg-col-7" id="main">
 			@while(have_posts()) @php(the_post())
 				
 				<h1>{{ the_title() }}</h1>
@@ -33,7 +33,7 @@
 				@endif
 
 				<article class="article">
-					<span class="italic">{{ get_region_halland_acf_page_ingress() }}</span>
+					<p><strong>{{ get_region_halland_acf_page_ingress() }}</strong></p>
 					{!! the_content() !!}
 				</article>
 				{{-- Content END --}}
@@ -47,7 +47,7 @@
 		</main>
 		{{-- Main Content END --}}
 
-		<aside class="pt4 col col-12 sm-col-2 md-col-2 lg-col-2">
+		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-2">
 			{{-- Content Navigation --}}
 			@include('partials.content-nav')
 			{{-- Content Navigation END --}}
