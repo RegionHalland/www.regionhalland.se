@@ -6,34 +6,31 @@
 
 @section('content')
 
-<main class="bg-white pt-16 pb-8" id="main">
-	<div class="container mx-auto px-4">
-		<div class="w-full mx-auto">
-			<h1 class="mb-4">{!! get_the_title() !!}</h1>
-			@php($myLinks = get_region_halland_acf_abc_page_links())  
-			@if(isset($myLinks['allLetters']))
-			  @foreach ($myLinks['allLetters'] as $link)
+<main class="center bg-white px4 pb4 pt3 " id="main" style="max-width: 1440px;">
+	<div class="left-align container mx-auto px-4">
+		<h1 class="">{!! get_the_title() !!}</h1>
+		@php($myLinks = get_region_halland_acf_abc_page_links())
+		@if(isset($myLinks['allLetters']))
+            <div class="rh-filter-alphabet">
+            @foreach ($myLinks['allLetters'] as $link)
 			    @if($link['has_content'] == 1)
-			    <a href="http://exempel.se/min-sida/#{{ $link['start_letter'] }}">{{ $link['start_letter_u'] }}</a>
+			        <a class="rh-filter-alphabet-link" style="text-decoration: underline; color: blue;" href="#{{ $link['start_letter'] }}">{{ $link['start_letter_u'] }}</a>
 			    @else
-			    <span>{{ $link['start_letter_u'] }}</span>
+			        <span class="rh-filter-alphabet-link" style="color:grey;">{{ $link['start_letter_u'] }}</span>
 			    @endif
-			  @endforeach
+		    @endforeach
+            </div>
+		@endif
+                <br>
+		@php($myLinks = get_region_halland_acf_abc_page_links())
+		@if(isset($myLinks['content']))
+		  @foreach ($myLinks['content'] as $link)
+                @if($link['has_anchor_link'] == 1)
+                    <h2><a name="{{ $link['start_letter'] }}">{{ $link['start_letter_u'] }}</a></h2>
 			@endif
-			<br>
-			@php($myLinks = get_region_halland_acf_abc_page_links())	
-			@if(isset($myLinks['content']))
-			  @foreach ($myLinks['content'] as $link)
-			    @if($link['has_anchor_link'] == 1)
-			       <a name="{{ $link['start_letter'] }}">{{ $link['start_letter_u'] }}</a><br>
-			    @endif
-			    <a href="{{ $link['link_url'] }}" target="{{ $link['link_target'] }}">{{ $link['link_title'] }}</a><br>
-			  @endforeach
-			@endif
-			@if (is_active_sidebar('sidebar-article-bottom'))
-				@include('partials.sidebar-article-bottom')
-			@endif
-		</div>
+			<a href="{{ $link['link_url'] }}" target="{{ $link['link_target'] }}">{{ $link['link_title'] }}</a><br>
+		  @endforeach
+		@endif
 	</div>
 </main>
 
