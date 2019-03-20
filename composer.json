@@ -112,6 +112,10 @@
       "url": "https://github.com/RegionHalland/region-halland-a-b-c-page-links-repeater.git"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/RegionHalland/region-halland-current-page-and-child-pages.git"
+    },
+    {
        "type": "vcs",
        "url": "https://github.com/RegionHalland/mfpconnect.git"
     },
@@ -171,6 +175,7 @@
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.3.0",
     "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.0",
+    "regionhalland/region-halland-current-page-and-child-pages": "1.0.0",
     "regionhalland/mfpconnect": "1.0.1",
     "regionhalland/mfpconnectmedia": "1.0.1"
   },
