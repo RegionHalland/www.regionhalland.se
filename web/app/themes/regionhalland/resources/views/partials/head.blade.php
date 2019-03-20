@@ -16,7 +16,7 @@
 	<meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
-  	<link rel='stylesheet' href='{!! env('WP_HOME') !!}/include/style/development.css' type='text/css' media='all' />
+  	<link rel="stylesheet" href="{!! env('WP_HOME') !!}/include/style/development.css" type="text/css" media="all" />
 	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet" />
     <link href="{!! env('WP_HOME') !!}/styleguide2.2.1/css/components.css" rel="stylesheet"/>
 </head>
