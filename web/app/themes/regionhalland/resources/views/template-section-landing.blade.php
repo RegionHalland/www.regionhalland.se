@@ -13,8 +13,8 @@
             <div class="pb2 center" style="max-width: 1440px;">
                 <div class="left-align">
 
-                <div class="mx4 pt3 pb4">
-                    <h1 class="mx3 pb2">{!! get_the_title() !!}</h1>
+                <div class="mx4 pt3 pb3">
+                    <h1 class="mx3 pb1">{!! get_the_title() !!}</h1>
                     <div class="mx3 col-12 sm-col-8 md-col-8 lg-col-8">{{ get_region_halland_acf_page_ingress() }}</div>
                 </div>
                 <div class="">
