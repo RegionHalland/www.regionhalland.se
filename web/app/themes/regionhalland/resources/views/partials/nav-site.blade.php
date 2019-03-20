@@ -8,16 +8,8 @@
     <div class="rh-toplinks">
         <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
             <li class="rh-toplinks-nav-item">
-                <i class="feather icon-alert-triangle rh-toplinks-nav-link-icon"></i>
-                <a class="rh-toplinks-nav-link" href="#">Driftinformation</a>
-            </li>
-            <li class="rh-toplinks-nav-item">
                 <i class="feather icon-headphones rh-toplinks-nav-link-icon"></i>
                 <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
-            </li>
-            <li class="rh-toplinks-nav-item">
-                <i class="feather icon-log-in rh-toplinks-nav-link-icon"></i>
-                <a class="rh-toplinks-nav-link" href="#">E-tjänster</a>
             </li>
         </ul>
     </div>
