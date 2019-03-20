@@ -1,3 +1,12 @@
+@php($myParentPage = get_region_halland_parent_page())
+@if($myParentPage['has_back'] == 1)
+    <div class="pb3 rh-label-previous">
+        <span class="rh-label-previous-icon"></span>
+        <p class="rh-label-previous-title">
+            <a href="{{$myParentPage['url']}}">{{$myParentPage['post_title']}}
+        </p>
+    </div>
+@endif
 @if(function_exists('get_region_halland_current_page_and_child_pages'))
 	@php($myPages = get_region_halland_current_page_and_child_pages())
 	@if(isset($myPages))
