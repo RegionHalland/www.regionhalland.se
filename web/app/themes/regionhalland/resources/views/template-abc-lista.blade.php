@@ -14,7 +14,7 @@
 			@if(isset($myLinks['allLetters']))
 			  @foreach ($myLinks['allLetters'] as $link)
 			    @if($link['has_content'] == 1)
-			    <a href="http://exempel.se/min-sida/#{{ $link['start_letter'] }}">{{ $link['start_letter'] }}</a>
+			    <a href="http://exempel.se/min-sida/#{{ $link['start_letter'] }}">{{ $link['start_letter_u'] }}</a>
 			    @else
 			    <span>{{ $link['start_letter_u'] }}</span>
 			    @endif
