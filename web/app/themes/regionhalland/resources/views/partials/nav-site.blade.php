@@ -16,7 +16,7 @@
     {{-- Utilities END --}}
     <div class="rh-header-search-desktop">
         <div class="rh-search-field">
-            <input type="text" class="rh-search-term" placeholder="Placeholder" aria-label="Sökruta">
+            <input type="text" class="rh-search-term" placeholder="Skriv din sökning här" aria-label="Sökruta">
             <button type="submit" class="rh-search-button">
                 Sök
             </button>
