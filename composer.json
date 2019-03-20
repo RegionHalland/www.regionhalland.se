@@ -97,7 +97,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/RegionHalland/region-halland-acf-page-kulturevenemang.git"
+      "url": "https://github.com/RegionHalland/region-halland-acf-page-kulturarrangemang.git"
     },
     {
       "type": "vcs",
@@ -167,7 +167,7 @@
     "regionhalland/region-halland-acf-page-kulturkatalog": "1.2.0",
     "regionhalland/region-halland-acf-options-page-site-message": "1.0.1",
     "regionhalland/region-halland-acf-page-ingress": "1.1.1",
-    "regionhalland/region-halland-acf-page-kulturevenemang": "1.2.0",
+    "regionhalland/region-halland-acf-page-kulturarrangemang": "2.0.0",
     "regionhalland/region-halland-use-taxonomy-category-on-page": "1.0.0",
     "regionhalland/region-halland-acf-page-links-blurbs": "1.3.0",
     "regionhalland/region-halland-a-b-c-page-links-repeater": "1.0.0",
