@@ -50,7 +50,7 @@
                             @endforeach
                         </ul>
                         <div class="col-12 center mt3">
-                            <button class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button">Visa fler nyheter</button>
+                            <a href="/nyheter" class="rh-button rh-button--secondary" aria-label="Visa fler nyheter" role="button" style="text-decoration: none;">Visa fler nyheter</a>
                         </div>
                         </div>
                         </div>
