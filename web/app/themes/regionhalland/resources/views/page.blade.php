@@ -21,7 +21,7 @@
 		{{-- Sidebar END --}}
 
 		{{-- Main Content --}}
-		<main class="pl3 pr1 pt3 pb4 col col-12 sm-col-12 md-col-12 lg-col-7" id="main">
+		<main class="pl3 pr2 pt3 pb4 col col-12 sm-col-12 md-col-12 lg-col-6" id="main">
 			@while(have_posts()) @php(the_post())
 				
 				<h1>{{ the_title() }}</h1>
@@ -47,7 +47,7 @@
 		</main>
 		{{-- Main Content END --}}
 
-		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-2">
+		<aside class="pt4 col col-12 sm-col-12 md-col-12 lg-col-3">
 			{{-- Content Navigation --}}
 			@include('partials.content-nav')
 			{{-- Content Navigation END --}}
