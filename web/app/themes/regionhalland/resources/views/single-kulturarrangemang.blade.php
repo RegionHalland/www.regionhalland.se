@@ -11,53 +11,34 @@
 		</div>
 	</div>
 
-	<div class="center px4 pt3 pb2" style="max-width: 1440px;">
+	<div class="center px4 pt3 pb4" style="max-width: 1440px;">
 		<div class="left-align">
 			<div class="">
 				@while(have_posts()) @php(the_post())
-					<article class="">
-						<h1 class="">{{ get_the_title() }}</h1>
-						<div class="">
+					<article class="clearfix">
+						<div class="col col-12 md-col-9 pr4">
+							<h1 class="">{{ get_the_title() }}</h1>
 							{{ get_region_halland_acf_page_kulturarrangemang_ingress() }}
 							<p>{{ the_content() }}</p>
+							@include('partials.author-info')
 						</div>
-						@include('partials.author-info')
+						<div class="col col-12 md-col-3">
+							<div class="" >
+								<h2 class="h2" style="border-bottom: 2px solid #61A2D8;">Mer information</h2>
+								<div class="mt2 pt2 pl2 pb2" style="border-left: 4px solid #61A2D8; background-color: #D0E3F3; border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
+									<p><strong>Kategori:</strong> {{ get_region_halland_acf_page_kulturarrangemang_subcategory_name() }}</p>
+									<p><strong>Tid:</strong> {{ get_region_halland_acf_page_kulturarrangemang_tid() }}</p>
+									<p><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturarrangemang_plats() }}</p>
+									<p><strong>Sista anmälningsdag:</strong> {{ get_region_halland_acf_page_kulturarrangemang_sista_anmalningstid() }}</p>
+									<p><strong>Målgrupp:</strong> {{ get_region_halland_acf_page_kulturarrangemang_malgrupp() }}</p>
+								</div>
+							</div>
+						</div>
+
 					</article>
 				@endwhile
 			</div>
-			<div class="">
-				<div class="">
-					<header class="">
-						<span class="">Mer information</span>
-					</header>
-					<ol class="">
-						<li class="">
-							<span><strong>Typ:</strong> {{ get_region_halland_acf_page_kulturarrangemang_type_name() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Kategori:</strong> {{ get_region_halland_acf_page_kulturarrangemang_category_name() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Subkategori:</strong> {{ get_region_halland_acf_page_kulturarrangemang_subcategory_name() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Fullbokat:</strong> {{ get_region_halland_acf_page_kulturarrangemang_fullbokat() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Ttid:</strong> {{ get_region_halland_acf_page_kulturarrangemang_tid() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Plats:</strong> {{ get_region_halland_acf_page_kulturarrangemang_plats() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Sista anmälningsdag:</strong> {{ get_region_halland_acf_page_kulturarrangemang_sista_anmalningstid() }}</span>
-						</li>
-						<li class="">
-							<span><strong>Målgrupp:</strong> {{ get_region_halland_acf_page_kulturarrangemang_malgrupp() }}</span>
-						</li>
-					</ol>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </main>
