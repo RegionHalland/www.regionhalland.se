@@ -2,26 +2,20 @@
 
 @section('content')
 
-<main class="bg-white pt-12 pb-8" id="main">
-	<div class="container mx-auto px-4">
-		<div class="w-full mx-auto">
+<main class="center" id="main" style="max-width: 1440px;">
+	<div class="left-align px4 pt3 pb2">
+		<div class="">
 			@php($myItems = get_region_halland_acf_page_kulturkatalog_items())
+			<ul class="rh-lists">
+				<h4 class="rh-lists-title"> Lorem ipsum </h4>
 			@foreach($myItems as $item)
-				<h2>{{ $item->post_title }}</h2><br>
-				<span>{{ $item->post_content }}</span><br><br>
-				<span>
-					<strong>Typ:</strong>
-					@foreach($item->labels as $label)
-						{{ $label['label'] }}
-					@endforeach
-				</span><br>
-				<span><strong>Målgrupp:</strong> {{ $item->malgrupp }}</span><br>
-				<span><strong>Publik:</strong> {{ $item->publik }}</span><br>
-				<span><strong>Speltid:</strong> {{ $item->speltid }}</span><br>
-				<span><strong>Lokal:</strong> {{ $item->lokal }}</span><br>
-				<span><strong>Period:</strong> {{ $item->period }}</span><br>
-				<span><strong>Pris:</strong> {{ $item->pris }}</span><br><br><br>
-			@endforeach	
+				<li class="rh-lists-items">
+					<p class="rh-lists-items-left"><a href="{{ $item->url }}" style="color:black; text-decoration: none;">{{ $item->post_title }}</a></p>
+					<p class="rh-lists-items-right">{{ $item->malgrupp }}</p>
+					<hr class="rh-lists-items-hr">
+				</li>
+			@endforeach
+			</ul>
 		</div>
 	</div>
 </main>
