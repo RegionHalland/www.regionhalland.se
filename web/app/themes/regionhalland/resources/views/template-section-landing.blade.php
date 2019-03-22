@@ -1,5 +1,5 @@
 {{--
-	Template Name: Section Page
+	Template Name: Sektionssida
 --}}
 
 @extends('layouts.app')

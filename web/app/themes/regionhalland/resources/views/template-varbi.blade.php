@@ -1,5 +1,5 @@
 {{--
-	Template Name: Varbi
+	Template Name: Lediga jobb via Varbi
 --}}
 
 @extends('layouts.app')

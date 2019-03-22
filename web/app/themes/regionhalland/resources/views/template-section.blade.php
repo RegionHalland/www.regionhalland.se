@@ -1,5 +1,5 @@
 {{--
-	Template Name: Section Overview
+	Template Name: Använd ej - Section Overview
 --}}
 
 @extends('layouts.app')

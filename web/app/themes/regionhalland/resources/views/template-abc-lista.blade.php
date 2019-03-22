@@ -1,5 +1,5 @@
 {{--
-	Template Name: ABC-lista
+	Template Name: A-Ö sida
 --}}
 
 @extends('layouts.app')
