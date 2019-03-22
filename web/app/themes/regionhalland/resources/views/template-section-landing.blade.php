@@ -35,10 +35,10 @@
                     <div style="background-color: #F4F4F4;" class="pb3 pt3">
                         <div class="center" style="max-width:1440px;">
                             <div class="left-align">
-                        <div class="mx4 pt3 pb2">
+                        <div class="mx3 pt3 pb2">
                             <h1 class="pb2">Nyheter</h1>
                         </div>
-                        <ul class="flex flex-wrap pb3 mx4 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
+                        <ul class="flex flex-wrap pb3 mx3 pt3 px2" aria-label="Nyheter" style="background-color: white; border-radius: 0.4ex; box-shadow: 1px 2px 6px grey;">
                             @foreach($newsitems as $newsitem)
                                 <li class="rh-article pb2 col-12 sm-col-6 md-col-6 lg-col-6 px2">
                                     <h2 class="h3 rh-article-title"><a class="rh-article-title-link" style="color: #378A30;" href="{{ $newsitem['permalink'] }}">{{ $newsitem['title'] }}<a/></h2>
