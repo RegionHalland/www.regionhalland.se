@@ -14,7 +14,7 @@
                         </a>
                         <span class="rh-navigation-card-title-icon"></span>
                     </div>
-                    <p class="rh-navigation-card-description left-align">
+                    <p class="rh-navigation-card-description left-align" style="color:#575757;">
                         @if(has_excerpt($page->ID))
                             {{ $page->acf_excerpt }}
                         @else
