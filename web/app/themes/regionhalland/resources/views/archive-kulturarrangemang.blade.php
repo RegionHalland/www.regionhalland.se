@@ -15,15 +15,15 @@
                 @foreach($myItems as $item)
                     <li>
                         <div class="rh-event-card-calendar mb2 l2" style="background-color: white;">
-                            <div class="pl3 pr1" style="color: black; position: relative; top:50%; transform: translateY(+80%);">
-                                <h4 class="rh-event-card-calendar-date-day" style="color:black">{{ $item->kultur_starttid }}</h4>
+                            <div class="pl3 pr1" style="color: black; position: relative; top:50%; transform: translateY(+100%);">
+                                <span class="h2 rh-event-card-calendar-date-day" style="color:black">{{ $item->kultur_starttid }}</span>
                             </div>
                             <div class="py2 rh-event-card-calendar-description">
-                                <h5 class="rh-event-card-calendar-title">
+                                <h2 class="rh-event-card-calendar-title">
                                     <a href="{{ $item->url }}" class="rh-event-card-calendar-title-link" style="color: black;">
                                         {{ $item->post_title }}
                                     </a>
-                                </h5>
+                                </h2>
                                 <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
                                     {{ $item->kultur_tid }}
                                 </p>

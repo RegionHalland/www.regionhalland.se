@@ -7,7 +7,7 @@
 		<div class="">
 			@php($myItems = get_region_halland_acf_page_kulturkatalog_items())
 			<ul class="rh-lists">
-				<h4 class="rh-lists-title"> Kulturprogram </h4>
+				<h1 class="pb2 rh-lists-title">Kulturprogram</h1>
 			@foreach($myItems as $item)
 				<li class="rh-lists-items">
 					<p class="rh-lists-items-left"><a href="{{ $item->url }}" style="color:black; text-decoration: none;">{{ $item->post_title }}</a></p>

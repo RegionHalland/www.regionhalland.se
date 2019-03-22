@@ -4,7 +4,7 @@
     <div class="rh-message mx-auto" style="max-width: 1440px">
             <span class="rh-message-icon"></span>
             <div class="rh-message-text">
-                <h5 class="rh-message-text-title">{!! $myMessage['rubrik'] !!}</h5>
+                <h1 class="h2 rh-message-text-title">{!! $myMessage['rubrik'] !!}</h1>
                 <p>{!! $myMessage['meddelande'] !!}</p>
                 <p>
                     <a class="rh-message-text-link" href="{{ $myMessage['link_url'] }}" target="{{ $myMessage['link_target'] }}">{{ $myMessage['link_title'] }}</a>
