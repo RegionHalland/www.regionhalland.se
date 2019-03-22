@@ -1,8 +1,8 @@
 <nav aria-label="Undersidor">
-    <ul class="flex flex-wrap pt3 mx3 mb4" aria-label="Undersidor" style="background-color: white; border-radius: 0.4ex;box-shadow: 1px 2px 6px grey;">
+    <ul class="clearfix pt3 mx3 mb4" aria-label="Undersidor" style="background-color: white; border-radius: 0.4ex;box-shadow: 1px 2px 6px grey;">
         @php($page_children = get_region_halland_page_children())
         @foreach($page_children as $index => $page)
-            <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-4 px3">
+            <li class="rh-navigation-card col col-12 sm-col-6 md-col-4 lg-col-4 px3">
                 <div class="rh-navigation-card-title">
                     <strong><a href="{{ $page->url }}" class="h3" style="text-decoration: none; color: black;">
                         {{ $page->post_title }}
