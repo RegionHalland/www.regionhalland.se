@@ -11,6 +11,12 @@
                 <strong>Telefon:</strong> 035 - 13 48 00<br>
                 <strong>E-post:</strong> <a href="mailto:regionen@regionhalland.se">regionen@regionhalland.se</a>
             </p>
+            <p class="h2 pt3">
+                Fler kontaktvägar
+            </p>
+            <p>
+                <a href="">Visselblås</a>
+            </p>
 
         </div>
 
@@ -19,7 +25,17 @@
             <p><a href="">(länk till sida)</a></p>
             <p class="h2 pt3">Följ oss</p>
             <p><a href="">Region Halland i sociala medier</a></p>
-
+            <p class="h2 pt3">Ämnesområden</p>
+            @php($first_level_pages = get_region_halland_tree_first_level())
+            @if(isset($first_level_pages) && !empty($first_level_pages))
+                @foreach($first_level_pages as $first_level_page)
+                    @if($first_level_page->active === true)
+                        <a class="active" href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
+                    @else
+                        <a href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
+                    @endif
+                @endforeach
+            @endif
 
         </div>
         <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
@@ -32,32 +48,6 @@
                 Felanmälan och synpunkter
             </p>
             <a href="">Felanmälanssystem</a>
-
-        </div>
-    </div>
-    <div class="clearfix center pt2 pb4 px3" style="max-width: 1440px;">
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
-            <p class="h2 pt3">
-                Fler kontaktvägar
-            </p>
-            <p>
-                <a href="">Visselblås</a>
-            </p>
-        </div>
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
-            <p class="h2 pt3">Ämnesområden</p>
-            @php($first_level_pages = get_region_halland_tree_first_level())
-            @if(isset($first_level_pages) && !empty($first_level_pages))
-                @foreach($first_level_pages as $first_level_page)
-                    @if($first_level_page->active === true)
-                        <a class="active" href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
-                    @else
-                        <a href="{{ $first_level_page->url }}">{{ $first_level_page->post_title }}</a><br>
-                    @endif
-                @endforeach
-            @endif
-        </div>
-        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2 pt3">Demokrati och politik</p>
             <p>
                 @if(function_exists('get_region_halland_page_children'))
@@ -70,8 +60,8 @@
                 @endif
 
             </p>
-        </div>
 
+        </div>
     </div>
 </div>
 {{--
