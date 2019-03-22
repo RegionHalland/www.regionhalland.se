@@ -4,9 +4,9 @@
         @foreach($page_children as $index => $page)
             <li class="rh-navigation-card col-12 sm-col-6 md-col-4 lg-col-4 px3">
                 <div class="rh-navigation-card-title">
-                    <a href="{{ $page->url }}" class="rh-navigation-card-title-link">
+                    <strong><a href="{{ $page->url }}" class="h3" style="text-decoration: none; color: black;">
                         {{ $page->post_title }}
-                    </a>
+                    </a></strong>
                     <span class="rh-navigation-card-title-icon"></span>
                 </div>
                 <p class="rh-navigation-card-description">
