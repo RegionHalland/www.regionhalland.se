@@ -1,6 +1,6 @@
 <div style="background-color: #C3DCC1">
-    <div class="clearfix center flex flex-wrap pt3 px3" style="max-width: 1440px;">
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+    <div class="clearfix center pt3 px3" style="max-width: 1440px;">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Kontakta oss</p>
             <p>
                 Region Halland<br>
@@ -14,7 +14,7 @@
 
         </div>
 
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Nyheter och press</p>
             <p><a href="">(länk till sida)</a></p>
             <p class="h2 pt3">Följ oss</p>
@@ -22,7 +22,7 @@
 
 
         </div>
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2">Om webbplatsen<p>
             <p>
                 <a href="">Om webbplatsen</a><br>
@@ -35,8 +35,8 @@
 
         </div>
     </div>
-    <div class="clearfix center flex flex-wrap pt2 pb4 px3" style="max-width: 1440px;">
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+    <div class="clearfix center pt2 pb4 px3" style="max-width: 1440px;">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2 pt3">
                 Fler kontaktvägar
             </p>
@@ -44,7 +44,7 @@
                 <a href="">Visselblås</a>
             </p>
         </div>
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2 pt3">Ämnesområden</p>
             @php($first_level_pages = get_region_halland_tree_first_level())
             @if(isset($first_level_pages) && !empty($first_level_pages))
@@ -57,7 +57,7 @@
                 @endforeach
             @endif
         </div>
-        <div class="left-align col-12 sm-col-6 md-col-6 lg-col-4">
+        <div class="left-align col col-12 sm-col-6 md-col-6 lg-col-4">
             <p class="h2 pt3">Demokrati och politik</p>
             <p>
                 @if(function_exists('get_region_halland_page_children'))
